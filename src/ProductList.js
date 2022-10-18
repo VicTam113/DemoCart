@@ -9,21 +9,16 @@ export default function ProductList() {
 
     //useEffect hook
     useEffect(()=>{
-
-        //1 : 無第二個參數 : component每次render都會觸發
-        //2 : Dependency Array是空array時 : 只會在第一次網頁render時會觸發
-        //3 : Dependency Array是有變數時 : 第一次網頁render時 + 指定的變數改變 會觸發
-        fetch('https://hoyinleung.github.io/demoapi/react-basic-product.json')
+        fetch('https://victam113.github.io/demoapi/react-basic-product.json')
             .then(response => response.json())
             .then(data => setProductList(data))
 
-    },[]) // <==  Dependency Array
+    },[]) 
 
     return (
-        //React Fragment簡寫
         <>
-            <Title mainTitle="React入門水果店" />
-            
+            <Title mainTitle="三文治店(應用React.js實作) " />
+
             <div className="container">
                 {
                     productList.map(product=>(
@@ -31,13 +26,14 @@ export default function ProductList() {
 
                             <div className="containerItem">
                                 <Link to={'/product/'+product.id}>
-                                    <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name} />
+                                    <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name}  />
                                 </Link>
-
+                                
                                 <div className="productName">
-                                    {product.name}  -  {product.price}元/件
+                                 {product.name}
+                                 <p>{product.price}元/件</p>
                                 </div>
-                
+                                
                                 <QuantityBtn productInfo={product} />
                             </div>
 
@@ -45,6 +41,8 @@ export default function ProductList() {
                     ))
                 }
             </div>
+
+
         </>
     )
 }
