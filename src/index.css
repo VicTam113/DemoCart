@@ -6,8 +6,8 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px auto;
-  width: 95%;
+  margin: auto;
+  min-width: 1200px;
   max-width: 1200px;
 }
 .containerItem{
@@ -113,14 +113,16 @@ img {
 }
 .cartSection{
   width: 70%;
-
+  flex-wrap: wrap;
+  display: flex;
+  margin: 10px auto;
 
 }
 .checkoutTable{
-  width: 800px;
+  width: 900px;
   text-align: left;
   border-spacing: 0px;
-  margin-right: 100px;
+  margin-left: 100px;
   
 }
 .checkoutTable tr{
@@ -141,9 +143,10 @@ img {
   margin-right: 30px;
 }
 .checkoutSection{
-  width: 20%;
+  width: 30%;
   font-size: 20px;
-  text-align: right;
+  text-align: center;
+
 }
 .checkoutSection div{
   margin: 12px 30px;

@@ -17,8 +17,8 @@ function App() {
 
 			<nav>
 				<Link to="/">首頁</Link> 
-				<Link to="/checkout">購物車結帳</Link>                         
-				<Link to="/Introduce">關於實作介紹</Link>
+				<Link to="/checkout">結帳</Link>                         
+				<Link to="/Introduce">實作介紹</Link>
 			</nav>
 
 			<Routes>
