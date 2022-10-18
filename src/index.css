@@ -44,8 +44,6 @@ img {
 }
 .addToCart{
   display: block;
-  max-width: 80%;
-  min-width: 80%;
   margin: 25px auto;
   font-size: 20px;
   font-weight: bold;
@@ -105,6 +103,7 @@ img {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+
 }
 .ProductDetail img{
   width:350px;
@@ -142,6 +141,7 @@ img {
   font-size: 30px;
   font-weight: bold;
   margin-right: 30px;
+  display: block;
 }
 .checkoutSection{
   width: 30%;
